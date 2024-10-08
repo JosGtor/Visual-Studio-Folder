@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Page</title>
+    </head>
+    <body>
+        <h1>
+            Formulario
+        </h1>
+
+        <p>Boxes with * are required</p>
+
+        <!--Beginning of form-->
+
+        <form action="josue_2.html" method="post">
+            <section class="Username">
+            
+            <label for="pagina">*Username:</label>
+            <input id="nombre" name="nombre" type="text" required>
+            </section>
+        
+            <br>
+
+            <section class="Password">
+            <label for="password">*Password:</label>
+            <input id="pw" name="password" type="password" required>
+            </section>
+
+            <br>
+
+            <section class="info">
+            <label for="information">*Age:</label>
+            <input id="age" name="age" type="number" min="18" max="21" required>
+            </section>
+
+            <br>
+
+            <section class="food"></section>
+            <label for="food">Favorite Food:</label>
+            <select id="lunch" name="lunch">
+                <option value="sancocho">Sancoho</option>
+                <option value="yaroa">Yaroa</option>
+                <option value="mofongo">Mofongo</option>
+                <option value="mangu">Mangu</option>
+                <option value="none">None</option>
+            </select>
+            </section>
+
+            <br>
+            <section class="birthplace">
+            <label for="country">*Country of Birth:</label>
+            <input id="places" name="places" type="text" list="country" required>
+            <datalist id="country">
+                <option value="Argentina"></option>
+                <option value="Andorra"></option>
+                <option value="Armenia"></option>
+                <option value="Belize"></option>
+                <option value="Bahamas"></option>
+                <option value="Bolivia"></option>
+                <option value="Canada"></option>
+                <option value="China"></option>
+                <option value="Chile"></option>
+                <option value="Colombia"></option>
+                <option value="Dominican Republic"></option>
+                <option value="Dominica"></option>
+                <option value="Denmark"></option>
+            </datalist>
+            </section>
+
+            <p>Do you like United States?</p>
+            <input id="yes" name="question" type="radio" value="yes" required>
+            <label for="yes">Yes</label>
+            <input id="no" name="question" type="radio" value="no" required>
+            <label for="no">No</label>
+
+            <br>
+
+            <p>Any comments about United States?</p>
+            <textarea id="additonal" name="additonal" rows="10" cols="30">WRITE HERE</textarea>
+
+            <br>
+
+            <input type="submit" value="Send">
+
+        </form>
+
+        <!--End of Form-->
+
+    </body>
+</html>
